@@ -1,1 +1,14 @@
 @import "reset.css";
+
+body {
+
+    /* Image background */
+    background-image:
+        url('/img/background.webp');
+
+    /* Centering and scaling the background */
+    width: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
