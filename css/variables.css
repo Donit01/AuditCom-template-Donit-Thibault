@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "MyFont";
+  src: url("/fonts/MyFont.woff2") format("woff2"),
+       url("/fonts/MyFont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --primary-color: #FFFF;
+  --secondary-color: #121212;
+  --color-accent: #e63946;
+  --big-space: 4rem;
+  --space: 1rem;
+}

@@ -1,14 +1,39 @@
 @import "reset.css";
+@import "default-style.css";
+@import "variables.css";
 
-body {
+section#hero {
+    h2 {
+        color: var(--secondary-color);
+        line-height: 3.5rem;
+        margin-bottom: var(--big-space);
+    }
 
-    /* Image background */
-    background-image:
-        url('/img/background.webp');
+    h1 {
+        color: var(--secondary-color);
+        line-height: 5rem;
+        margin-bottom: var(--big-space);
+    }
 
-    /* Centering and scaling the background */
-    width: 100%;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
+    p {
+        color: var(--secondary-color);
+    }
+    a img {
+        width: 10rem;
+        justify-self: center;
+    }
+}
+
+section#teams {
+
+    div#teamList>* {
+        display: flex;
+    }
+}
+
+footer {
+    background-color: black;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
 }
