@@ -29,7 +29,6 @@ section#hero {
 
     div {
         display: flex;
-        align-items: center;
     }
 
     a img {
@@ -61,7 +60,7 @@ section#teams {
         margin-bottom: calc(2*var(--space));
     }
 
-    div#teamList {
+    div {
         display: flex;
         flex-wrap: wrap;
         gap: var(--space);
@@ -312,9 +311,106 @@ section#download #downloadForm label[for="consent"]{
   
 footer {
     /* annule le padding du body */
+<<<<<<< HEAD
     background-color: rgb(0, 0, 0);
+=======
+    font-weight: var(--regular);
+    background-color: black;
+>>>>>>> d0fe6b84f345fb271d56a31f2a59f0814127e49e
     opacity: 0.8;
     padding: 2rem;
     display: flex;
     justify-content: space-between;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    html {
+        font-size: 16px;
+
+        section {
+            padding: 2rem;
+        }
+
+        #hero {
+            background-position: calc(50% - 200px) bottom;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            h1 {
+                font-size: 2rem;
+                line-height: 3rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+                line-height: 3rem;
+                margin-bottom: var(--space);
+            }
+
+            div {
+                flex-direction: column;
+            }
+
+            p {
+                width: 100%;
+            }
+        }
+
+        .divider-img {
+            height: 500px;
+            bottom: -70px;
+        }
+
+        #teams {
+            h2 {
+                font-size: 2rem;
+                line-height: 3rem;
+            }
+
+            div#teamList {
+                display: grid;
+                gap: 0;
+                grid-template-columns: 1fr 1fr;
+                align-items: center;
+                justify-items: left;
+
+                * {
+                    padding: 0.2rem 0;
+                    font-size: 0.8rem;
+                }
+            }
+        }
+
+        #insights {
+            h2 {
+                font-size: 2rem;
+                line-height: 3rem;
+            }
+
+            h4 {
+                font-size: 1rem;
+            }
+
+            div.insight-grid {
+                display: flex;
+                flex-direction: column;
+                h3 {
+                    font-size: 2rem;
+                }
+            }
+        }
+
+        footer {
+            :nth-child(2) {
+                text-align: right;
+            }
+            h5 {
+                font-size: 0.6rem;
+                font-weight: var(--regular);
+            }
+        }
+    }
 }
