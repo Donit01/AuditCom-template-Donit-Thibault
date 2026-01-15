@@ -11,9 +11,20 @@
 
   --primary-color: #FFFF;
   --secondary-color: #121212;
-  --color-accent: #e63946;
+  --color-accent: #56a567;
+  --color-accent-alt: #bca69f;
+
   --big-space: 4rem;
   --space: 1rem;
 
   --box-shadow: rgba(0, 0, 0, 0.1) 25px 20px 0px -5px, rgba(0, 0, 0, 0.04) 10px 10px 0px -5px;
+}
+
+@keyframes grow {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
 }

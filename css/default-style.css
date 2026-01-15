@@ -1,5 +1,5 @@
 html {
-    scroll-behavior: smooth; /* Transitions plus fluides */
+    /* Transitions plus fluides */
     font-family: "Montserrat";
     color: var(--primary-color);
     font-size: 18px;
@@ -16,10 +16,21 @@ html {
     h2 {
         font-weight: var(--bold);
         font-size: 3rem;
+        line-height: 3.5rem;
     }
 
     h3 {
         font-weight: var(--bold);
         font-size: 2rem;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+        font-weight: var(--regular);
+    }
+
+    strong {
+        font-weight: var(--regular);
+        color: var(--color-accent);
     }
 }

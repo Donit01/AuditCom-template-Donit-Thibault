@@ -25,7 +25,7 @@
     </section>
     <section id="teams" class="soil-background">
         <!-- data-bind-global="count" : Affiche le nombre total de rapports (métadonnées globales) -->
-        <h2><span data-bind-global="count"></span> clubs passés à la loupe</h2>
+        <h2><span data-bind-global="count"></span> clubs passés sous la loupe</h2>
         <!-- id="teamList" : Conteneur où seront ajoutés dynamiquement les éléments de l'équipe. Le nom de cet ID ne doit pas être modifié. -->
         <div id="teamList">
         </div>
@@ -33,42 +33,38 @@
     <section id="insights" class="stone-background">
         <h2>Comprendre ce qu’il se passe sous le terrain</h2>
         <h4>4 signaux qui révèlent le noyau du problème</h4>
-        <div class="insight">
-            <h3>Paradoxe de l'expérience mobile</h3>
-            <h4>7 supporters sur 10 consultent votre site sur smartphone, mais la lenteur technique de vos pages
-                pourrait leur faire abandonner la navigation en moins de 3 secondes.</h4>
-            <p>Pour des clubs comme le Lancy FC, plus de 71 % du trafic web provient de téléphones portables. Pourtant,
-                la performance technique s'effondre souvent sur ce support (ex: passage de 68/100 sur ordinateur à
-                44/100 sur mobile pour le FC Biel-Bienne).</p>
-            <img src="img/graphic.svg" alt="Graphique des supports digitaux">
-        </div>
-        <div class="insight">
-            <h3>Monétisation freinée</h3>
-            <h4>Pourquoi les processus de commande manuels coûtent des milliers de francs de revenus aux clubs chaque
-                saison?</h4>
-            <p>De nombreux clubs, même de bon niveau comme le SR Delémont ou le Lancy FC, gèrent encore leur boutique ou
-                leur billetterie via des formulaires manuels, des bons de commande PDF ou WhatsApp. Cette absence de
-                solutions de paiement intégrées crée une barrière à l'achat immédiat. Le supporter doit multiplier les
-                étapes, ce qui freine considérablement les revenus liés au merchandising et aux abonnements.</p>
-            <img src="img/conversion_tunel.svg" alt="Tunel de conversion">
-        </div>
-        <div class="insight">
-            <h3>Déficit de visibilité</h3>
-            <h4>Votre club est premier sur son nom, mais inexistant pour les nouveaux arrivants. Comment se rendre
-                visible sur Google?</h4>
-            <p>Si les clubs sont facilement trouvables par leur nom précis (ex: « FC Monthey »), ils disparaissent des
-                résultats Google dès que la recherche devient plus large (ex: « club de foot Valais » ou « école de foot
-                Genève »).</p>
-            <img src="img/web_search.svg" alt="Icône de recherche web">
-        </div>
-        <div class="insight">
-            <h3>Audience inactive</h3>
-            <h4>Comment transformer vos réseaux sociaux en véritables leviers d'engagement plutôt qu'en simples panneaux
-                d'affichage?</h4>
-            <p>La diffusion uniforme des contenus sur tous les réseaux dilue l’attention. Les réseaux sociaux, utilisés
-                comme des canaux de duplication, ne répondent pas aux attentes de leur audience qui finit par se
-                désintéresser.</p>
-            <img src="img/social_media.svg" alt="La différence d'audience entre les réseaux sociaux">
+        <div class="insight-grid">
+            <div id="mobile-experience" class="insight">
+                <h3>Paradoxe de l'expérience mobile</h3>
+                <p><strong>7 supporters sur 10</strong> consultent votre site sur smartphone, mais la lenteur technique
+                    de vos pages
+                    pourrait
+                    leur faire abandonner la navigation en moins de 3 secondes.</p>
+                <img src="img/graphic.svg" alt="Graphique des supports digitaux">
+            </div>
+            <div id="conversion-tunel" class="insight">
+                <h3>Monétisation freinée</h3>
+                <p>De nombreux clubs gèrent encore leur boutique ou leur billetterie via des <strong>formulaires
+                        manuels</strong>, des
+                    bons
+                    de commande PDF ou WhatsApp. Cette absence de solutions de paiement intégrées crée une barrière à
+                    l'achat immédiat.</p>
+                <img src="img/conversion_tunel.svg" alt="Tunel de conversion">
+            </div>
+            <div id="search" class="insight">
+                <h3>Déficit de visibilité</h3>
+                <p>Si les clubs sont facilement trouvables par leur nom précis, ils <strong>disparaissent des résultats
+                        Google</strong>
+                    dès que la recherche devient plus large.</p>
+                <img src="img/web_search.svg" alt="Icône de recherche web">
+            </div>
+            <div id="social-media" class="insight">
+                <h3>Audience inactive</h3>
+                <p><strong>La diffusion uniforme</strong> des contenus sur tous les réseaux dilue l’attention. Les réseaux sociaux,
+                    utilisés comme des canaux de duplication, ne répondent pas aux attentes de leur audience qui finit par se
+                    désintéresser.</p>
+                <img src="img/social_media.svg" alt="La différence d'audience entre les réseaux sociaux">
+            </div>
         </div>
     </section>
     <section id="download">

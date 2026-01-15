@@ -3,6 +3,7 @@
 @import "variables.css";
 @import "soil.css";
 @import "stone.css";
+@import "animation.css";
 
 section#hero {
     height: 100vh;
@@ -31,11 +32,12 @@ section#hero {
     }
 
     a img {
-        position:relative;
+        position: relative;
         z-index: 3;
         width: 100px;
         justify-self: center;
     }
+
     p {
         width: 50%;
     }
@@ -46,15 +48,15 @@ section#hero {
     position: absolute;
     z-index: 2;
     left: 0;
-    bottom: -70px;
-    height: 600px;
+    bottom: -100px;
+    height: 800px;
     object-fit: cover;
 }
 
 section#teams {
 
     h2 {
-        margin-bottom: var(--space);
+        margin-bottom: calc(2*var(--space));
     }
 
     div#teamList {
@@ -71,8 +73,67 @@ section#teams {
     }
 }
 
+section#insights {
+    h2 {
+        margin-bottom: var(--space);
+    }
+
+    h4 {
+        font-size: 1.5rem;
+        font-weight: var(--regular);
+        color: var(--color-accent);
+    }
+
+    div.insight-grid {
+        margin-top: var(--big-space);
+        display: grid;
+        grid-template-columns: 9fr 11fr;
+        grid-template-rows: auto auto;
+        gap: var(--big-space);
+
+        div {
+            margin-bottom: var(--space);
+            h3 {
+                line-height: 2.5rem;
+                margin-bottom: var(--space);
+            }
+
+            img {
+                margin-top: 2rem;
+            }
+        }
+    }
+}
+
+div#mobile-experience {
+    img {
+        justify-self: center;
+        width: 40%;
+    }
+}
+
+div#conversion-tunel {
+    img {
+        justify-self: center;
+        width: 80%;
+    }
+}
+
+div#search {
+    img {
+        justify-self: center;
+        width: 30%;
+    }
+}
+
+div#social-media {
+    img {
+        justify-self: center;
+        width: 80%;
+    }
+}
+
 footer {
-    margin: -3rem;
     /* annule le padding du body */
     background-color: black;
     opacity: 0.8;

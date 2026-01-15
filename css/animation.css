@@ -1,0 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
+section#insights img:hover {
+    animation: grow 0.3s ease-in-out forwards;
+}
