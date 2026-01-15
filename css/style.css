@@ -18,6 +18,7 @@ section#hero {
     p {
         color: var(--secondary-color);
     }
+
     a img {
         width: 10rem;
         justify-self: center;
@@ -36,4 +37,8 @@ footer {
     padding: 2rem;
     display: flex;
     justify-content: space-between;
+}
+
+img {
+    width: 250px;
 }
