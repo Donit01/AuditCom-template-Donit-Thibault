@@ -4,6 +4,7 @@
 @import "soil.css";
 @import "stone.css";
 @import "animation.css";
+@import "responsive.css";
 
 section#hero {
     height: 100vh;
@@ -56,6 +57,7 @@ section#hero {
 section#teams {
 
     h2 {
+        margin-top: var(--space);
         margin-bottom: calc(2*var(--space));
     }
 
