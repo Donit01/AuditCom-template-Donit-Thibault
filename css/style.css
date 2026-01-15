@@ -56,7 +56,6 @@ section#hero {
 section#teams {
 
     h2 {
-        margin-top: var(--space);
         margin-bottom: calc(2*var(--space));
     }
 
@@ -76,6 +75,7 @@ section#teams {
 
 section#insights {
     h2 {
+        margin-top: var(--space);
         margin-bottom: var(--space);
     }
 
