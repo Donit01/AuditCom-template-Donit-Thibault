@@ -1,15 +1,19 @@
-@font-face {
-  font-family: "MyFont";
-  src: url("/fonts/MyFont.woff2") format("woff2"),
-       url("/fonts/MyFont.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@100..900&display=swap');
 
 :root {
+  --font-main: 'Montserrat', sans-serif;
+
+  /* weight presets */
+  --light: 300;
+  --regular: 400;
+  --bold: 700;
+  --extra-bold: 900;
+
   --primary-color: #FFFF;
   --secondary-color: #121212;
   --color-accent: #e63946;
   --big-space: 4rem;
   --space: 1rem;
+
+  --box-shadow: rgba(0, 0, 0, 0.1) 25px 20px 0px -5px, rgba(0, 0, 0, 0.04) 10px 10px 0px -5px;
 }

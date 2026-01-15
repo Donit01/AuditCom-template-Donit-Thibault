@@ -12,22 +12,25 @@
 
 <body>
     <section id="hero">
-        <h2>La présence digitale des clubs romands n’est pas défaillante.</h2>
-        <h1>Le vrai problème se trouve plus bas</h1>
+        <h1>La présence digitale des clubs romands n’est pas défaillante.</h1>
+        <div>
+            <h2>Le vrai problème se trouve plus bas.</h2>
+            <a href="#teams">
+                <img src="img/arrow_down.svg" alt="Voir les équipes">
+            </a>
+        </div>
         <p>Un audit en profondeur du digital des clubs romands pour creuser jusqu’au noyau de leurs difficultés.</p>
-        <a href="#teams">
-            <img src="img/arrow_down.svg" alt="Voir les équipes">
-        </a>
+        <img src="/img/grass-hero.webp" class="divider-img">
 
     </section>
-    <section id="teams">
+    <section id="teams" class="soil-background">
         <!-- data-bind-global="count" : Affiche le nombre total de rapports (métadonnées globales) -->
         <h2><span data-bind-global="count"></span> clubs passés à la loupe</h2>
         <!-- id="teamList" : Conteneur où seront ajoutés dynamiquement les éléments de l'équipe. Le nom de cet ID ne doit pas être modifié. -->
         <div id="teamList">
         </div>
     </section>
-    <section id="insights">
+    <section id="insights" class="stone-background">
         <h2>Comprendre ce qu’il se passe sous le terrain</h2>
         <h4>4 signaux qui révèlent le noyau du problème</h4>
         <div class="insight">
@@ -37,6 +40,7 @@
             <p>Pour des clubs comme le Lancy FC, plus de 71 % du trafic web provient de téléphones portables. Pourtant,
                 la performance technique s'effondre souvent sur ce support (ex: passage de 68/100 sur ordinateur à
                 44/100 sur mobile pour le FC Biel-Bienne).</p>
+            <img src="img/graphic.svg" alt="Graphique des supports digitaux">
         </div>
         <div class="insight">
             <h3>Monétisation freinée</h3>
@@ -46,6 +50,7 @@
                 leur billetterie via des formulaires manuels, des bons de commande PDF ou WhatsApp. Cette absence de
                 solutions de paiement intégrées crée une barrière à l'achat immédiat. Le supporter doit multiplier les
                 étapes, ce qui freine considérablement les revenus liés au merchandising et aux abonnements.</p>
+            <img src="img/conversion_tunel.svg" alt="Tunel de conversion">
         </div>
         <div class="insight">
             <h3>Déficit de visibilité</h3>
@@ -54,6 +59,7 @@
             <p>Si les clubs sont facilement trouvables par leur nom précis (ex: « FC Monthey »), ils disparaissent des
                 résultats Google dès que la recherche devient plus large (ex: « club de foot Valais » ou « école de foot
                 Genève »).</p>
+            <img src="img/web_search.svg" alt="Icône de recherche web">
         </div>
         <div class="insight">
             <h3>Audience inactive</h3>
@@ -62,6 +68,7 @@
             <p>La diffusion uniforme des contenus sur tous les réseaux dilue l’attention. Les réseaux sociaux, utilisés
                 comme des canaux de duplication, ne répondent pas aux attentes de leur audience qui finit par se
                 désintéresser.</p>
+            <img src="img/social_media.svg" alt="La différence d'audience entre les réseaux sociaux">
         </div>
     </section>
     <section id="download">
@@ -80,10 +87,11 @@
         </form>
     </section>
 
+    <footer>
+        <h5>Site réalisé par Thibault Moret et Donit Rrahmani</h5>
+        <h5>AuditCom - Rapport d'Analyse d'Écosystème Digital des clubs romands</h5>
+    </footer>
+
 </body>
-<footer>
-    <h5>Site réalisé par Thibault Moret et Donit Rrahmani</h5>
-    <h5>AuditCom - Rapport d'Analyse d'Écosystème Digital des clubs romands</h5>
-</footer>
 
 </html>

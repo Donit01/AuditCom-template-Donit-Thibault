@@ -1,0 +1,73 @@
+/* file.css */
+
+.soil-background {
+  /* -- Palette Variables for easy tuning -- */
+  --soil-base: #362724;
+  --soil-dark: #2b1d1b;
+  --soil-shadow: #1c1411;
+  --pebble-light: #422f2a;
+  --pebble-grey: #5D4037;
+
+  background-color: var(--soil-base);
+
+  /* COMPLEX VECTOR TEXTURE STACK
+     We stack multiple radial gradients to create distinct "objects" 
+     (clumps and stones) rather than soft washes.
+  */
+  background-image: 
+    /* Layer 1: Tiny sharp grit (Sand-like texture) */
+    radial-gradient(circle at 50% 50%, rgba(255,255,255,0.1) 1px, transparent 1.5px),
+    radial-gradient(circle at 10% 20%, rgba(0,0,0,0.3) 1px, transparent 1.5px),
+
+    /* Layer 2: Small distinct pebbles (Vector style) */
+    radial-gradient(circle at 80% 10%, var(--pebble-light) 3px, transparent 3.5px),
+    radial-gradient(circle at 15% 65%, var(--pebble-light) 2px, transparent 2.5px),
+
+    /* Layer 3: Darker soil clumps (irregular pattern) */
+    radial-gradient(circle at 0% 0%, var(--soil-dark) 8px, transparent 8.5px),
+    radial-gradient(circle at 40% 40%, var(--soil-dark) 6px, transparent 6.5px),
+    radial-gradient(circle at 75% 80%, var(--soil-dark) 10px, transparent 10.5px),
+
+    /* Layer 4: Deep shadows/voids for depth */
+    radial-gradient(circle at 20% 20%, var(--soil-shadow) 12px, transparent 13px),
+    radial-gradient(circle at 90% 90%, var(--soil-shadow) 15px, transparent 16px);
+
+  /* SIZING & REPEATING 
+     By using prime numbers or irregular sizes, we minimize the "grid" look 
+     and make it look more organic.
+  */
+  background-size: 
+    13px 13px,    /* Tiny Grit */
+    29px 29px,    /* Tiny Grit offset */
+    61px 61px,    /* Pebbles */
+    53px 53px,    /* Pebbles offset */
+    71px 71px,    /* Clumps */
+    89px 89px,    /* Clumps offset */
+    101px 101px,  /* Dark Clumps */
+    130px 130px,  /* Deep Shadows */
+    170px 170px;  /* Deep Shadows offset */
+
+  background-repeat: repeat;
+  
+  /* Hard edges for a "cutout" or vector feel */
+  background-attachment: scroll;
+}
+
+/* semi-opaque black overlay on top of the stone background */
+.soil-background {
+  position: relative; /* establish positioning context for the overlay */
+}
+.soil-background::before {
+  content: "";
+  position: absolute;
+  inset: 0; /* top:0; right:0; bottom:0; left:0; */
+  background: rgba(0,0,0,0.2); /* 50% black */
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* ensure section content appears above the overlay */
+.soil-background > * {
+  position: relative;
+  z-index: 2;
+}

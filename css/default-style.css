@@ -1,41 +1,25 @@
-body {
-
-    padding: 3rem;
-
-
-    /* Image background */
-    background-image:
-        url('/img/background.webp');
-
-    /* Centering and scaling the background */
-    width: 100%;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-section {
-    height: 100vh;
-}
-
 html {
     scroll-behavior: smooth; /* Transitions plus fluides */
-    font-family: "MyFont";
+    font-family: "Montserrat";
     color: var(--primary-color);
     font-size: 18px;
 
+    section {
+        padding: 3rem;
+    }
+
     h1 {
-        font-weight: bold;
-        font-size: 5rem;
+        font-weight: var(--extra-bold);
+        font-size: 4rem;
     }
 
     h2 {
-        font-weight: bold;
+        font-weight: var(--bold);
         font-size: 3rem;
     }
 
     h3 {
-        font-weight: bold;
+        font-weight: var(--bold);
         font-size: 2rem;
     }
 }

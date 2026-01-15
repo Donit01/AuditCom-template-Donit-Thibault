@@ -1,44 +1,82 @@
 @import "reset.css";
 @import "default-style.css";
 @import "variables.css";
+@import "soil.css";
+@import "stone.css";
 
 section#hero {
-    h2 {
-        color: var(--secondary-color);
-        line-height: 3.5rem;
-        margin-bottom: var(--big-space);
-    }
+    height: 100vh;
+    /* Image background */
+    background-image:
+        url('/img/hero-background.webp');
+
+    /* Centering and scaling the background */
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     h1 {
-        color: var(--secondary-color);
         line-height: 5rem;
         margin-bottom: var(--big-space);
     }
 
-    p {
-        color: var(--secondary-color);
+    h2 {
+        font-weight: var(--regular);
+        font-size: 3rem;
+    }
+
+    div {
+        display: flex;
+        align-items: center;
     }
 
     a img {
-        width: 10rem;
+        position:relative;
+        z-index: 3;
+        width: 100px;
         justify-self: center;
     }
+    p {
+        width: 50%;
+    }
+}
+
+.divider-img {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    bottom: -70px;
+    height: 600px;
+    object-fit: cover;
 }
 
 section#teams {
 
-    div#teamList>* {
+    h2 {
+        margin-bottom: var(--space);
+    }
+
+    div#teamList {
         display: flex;
+        flex-wrap: wrap;
+        gap: var(--space);
+        text-align: center;
+
+        * {
+            font-size: 1.5rem;
+            font-weight: var(--regular);
+            padding: 0 0.5rem;
+        }
     }
 }
 
 footer {
+    margin: -3rem;
+    /* annule le padding du body */
     background-color: black;
+    opacity: 0.8;
     padding: 2rem;
     display: flex;
     justify-content: space-between;
-}
-
-img {
-    width: 250px;
 }

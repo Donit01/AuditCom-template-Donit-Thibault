@@ -1,0 +1,72 @@
+/* file.css */
+
+.stone-background {
+  /* -- Palette Variables -- */
+  --stone-base: #1c1c1e;       /* Almost black background */
+  --stone-dark: #000000;       /* Deepest shadows/pits */
+  --stone-mid: #2c2c2f;        /* Main rock texture */
+  --mineral-light: #48484e;    /* Lighter grey minerals */
+  --mineral-sparkle: #636366;  /* Tiny mica/quartz flecks */
+
+  background-color: var(--stone-base);
+
+  /* VECTOR STONE STACK
+     Using hard-stop gradients to create a 'chipped' or 'aggregate' look.
+  */
+  background-image: 
+    /* Layer 1: The "Sparkle" - Tiny, sharp silica/quartz bits */
+    radial-gradient(circle at 20% 20%, var(--mineral-sparkle) 1px, transparent 1.5px),
+    radial-gradient(circle at 80% 80%, var(--mineral-sparkle) 2px, transparent 1.5px),
+
+    /* Layer 2: Medium Grey Aggregate (The bulk of the stone pattern) */
+    radial-gradient(circle at 50% 50%, var(--mineral-light) 9px, transparent 2.5px),
+    radial-gradient(circle at 10% 10%, var(--mineral-light) 3px, transparent 2.5px),
+    
+    /* Layer 3: Darker surface texture (unevenness) */
+    radial-gradient(circle at 75% 25%, var(--stone-mid) 12px, transparent 8px),
+    radial-gradient(circle at 25% 75%, var(--stone-mid) 5px, transparent 7px),
+
+    /* Layer 4: Deep Pits/Shadows (creates the feeling of density) */
+    radial-gradient(circle at 0% 100%, var(--stone-dark) 15px, transparent 23px),
+    radial-gradient(circle at 100% 0%, var(--stone-dark) 11px, transparent 9px),
+    
+    /* Layer 5: Very faint linear scratches/veins (optional for realism) */
+    linear-gradient(115deg, transparent 45%, rgba(255,255,255,0.03) 50%, transparent 55%);
+
+  /* POLYRHYTHMIC SIZING
+     Using prime numbers helps the distinct "pebbles" scatter randomly 
+     without creating a visible grid.
+  */
+  background-size: 
+    17px 17px,    /* Sparkle */
+    23px 23px,    /* Sparkle offset */
+    37px 37px,    /* Grey Aggregate */
+    41px 41px,    /* Grey Aggregate offset */
+    53px 53px,    /* Dark Texture */
+    67px 67px,    /* Dark Texture offset */
+    150px 150px,    /* Deep Pits */
+    150px 150px,    /* Deep Pits offset */
+    200px 200px;  /* Scratches */
+
+  background-repeat: repeat;
+  background-attachment: scroll;
+}
+
+/* semi-opaque black overlay on top of the stone background */
+.stone-background {
+  position: relative; /* establish positioning context for the overlay */
+}
+.stone-background::before {
+  content: "";
+  position: absolute;
+  inset: 0; /* top:0; right:0; bottom:0; left:0; */
+  background: rgba(0,0,0,0.6); /* 50% black */
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* ensure section content appears above the overlay */
+.stone-background > * {
+  position: relative;
+  z-index: 2;
+}
