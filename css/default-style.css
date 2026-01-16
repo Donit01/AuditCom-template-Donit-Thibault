@@ -1,4 +1,5 @@
 html {
+    background-color: black;
     /* Transitions plus fluides */
     font-family: "Montserrat";
     color: var(--primary-color);

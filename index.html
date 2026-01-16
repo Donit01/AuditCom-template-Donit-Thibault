@@ -8,14 +8,27 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="src/main.js" type="module" defer></script>
 
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_CH" />
+    <meta property="og:site_name" content="Rapport d'analyse d'écosystème digital des clubs de football romands" />
+
+    <meta property="og:title" content="Clubs romands : analyse de leur transformation digitale" />
+    <meta property="og:description"
+        content="Analyse approfondie de la visibilité digitale des clubs de football romands : SEO, réseaux sociaux, engagement des communautés et leviers de croissance." />
+    <meta property="og:url" content="https://donit01.github.io/AuditCom-template-Donit-Thibault/" />
+
+    <meta property="og:image" content="https://www.tonsite.ch/img/hero-background.webp" />
+    <meta property="og:image:alt" content="Analyse digitale des clubs de football romands" />
+
 </head>
 
 <body>
     <section id="hero">
-        <h1>La plupart des clubs romands sont absents du terrain digital.</h1>
+        <h1>La plupart des clubs romands sont absents du terrain digital</h1>
         <div>
-            <h2>Creusons aux racines du problème.</h2>
-            <a href="#teams">
+            <h2>Creusons aux racines du problème</h2>
+            <a href="#insights">
                 <img src="img/arrow_down.svg" alt="Voir les équipes">
             </a>
         </div>
@@ -70,10 +83,14 @@
         </div>
     </section>
     <section id="download" class="form-background">
+        <div class="download-title">
         <div class="download-intro">
             <h2>Télécharger le rapport complet</h2>
-            <p>Recevez gratuitement le rapport d'analyse approfondie et découvrez des recommandations concrètes pour améliorer la
+            <p>Recevez gratuitement le rapport d'analyse approfondie et découvrez des recommandations concrètes pour
+                améliorer la
                 présence digitale de votre club.</p>
+        </div>
+        <img src="img/report.png" alt="Icône du rapport en pdf">
         </div>
         <!-- id="messageContainer" : Conteneur pour afficher les messages de succès ou d'erreur. Le nom de cet ID ne doit pas être modifié. -->
         <div id="messageContainer">
@@ -87,6 +104,7 @@
             <input type="checkbox" name="newsletterAgreement" id="consent">
             <label for="consent">Je souhaite recevoir la newsletter</label>
         </form>
+
 
         <button type="submit" form="downloadForm" class="download-button">
             Télécharger le rapport (PDF)

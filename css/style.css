@@ -139,7 +139,8 @@ div#social-media {
 
 /* SECTION DOWNLOAD (style maquette) */
 section#download {
-    position: relative;/*
+    position: relative;
+    /*
     min-height: 100vh;
     padding: 70px 60px;
     overflow: hidden; */
@@ -303,6 +304,15 @@ section#download #downloadForm label[for="consent"] {
     box-shadow: 0 14px 26px rgba(0, 0, 0, .35);
 }
 
+.download-title {
+    display: flex;
+    justify-content: center;
+    img {
+        height: 20vw;
+        width: auto;
+    }
+}
+
 footer {
     /* annule le padding du body */
     width: 100vw;
@@ -405,6 +415,10 @@ footer {
                     font-size: 2rem;
                 }
             }
+        }
+
+        .download-title img {
+            display: none !important;
         }
 
         footer {
