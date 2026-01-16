@@ -3,5 +3,9 @@ html {
 }
 
 section#insights img:hover {
-    animation: grow 0.3s ease-in-out forwards;
+    animation: grow 0.5s ease-in-out forwards;
+}
+
+section .download-title img:hover {
+    animation: grow 0.5s ease-in-out forwards;
 }
