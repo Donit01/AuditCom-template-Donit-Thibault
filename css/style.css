@@ -5,6 +5,7 @@
 @import "stone.css";
 @import "animation.css";
 @import "responsive.css";
+@import "noyau.css";
 
 section#hero {
     height: 100vh;
@@ -144,13 +145,6 @@ section#download {
     overflow: hidden; */
     font-style: normal;
     padding-bottom: 10rem;
-    background-image:
-        url('/img/form-background.webp');
-
-    /* Centering and scaling the background */
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: flex-start;

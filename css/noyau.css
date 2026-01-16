@@ -1,0 +1,33 @@
+.form-background {
+  /* Base dark color */
+  background-color: #020101;
+  
+  background-image: 
+    /* Layer 1: The Intense White/Yellow Core (The Sun) */
+    radial-gradient(
+      circle at 50% 100%, 
+      rgba(255, 246, 219, 1) 0%, 
+      rgba(255, 200, 100, 1) 12%, 
+      rgba(255, 120, 0, 0) 25%
+    ),
+    
+    /* Layer 2: The Magma Orange Glow (The surrounding light) */
+    radial-gradient(
+      circle at 50% 100%, 
+      rgba(255, 94, 0, 0.8) 10%, 
+      rgba(160, 40, 5, 0.6) 35%, 
+      rgba(50, 10, 5, 0) 60%
+    ),
+    
+    /* Layer 3: The Cave/Rock Transition (Dark Brown to Black) */
+    linear-gradient(
+      to top, 
+      rgba(60, 20, 5, 0.2) 0%, 
+      rgba(25, 21, 21, 0.8) 40%, 
+      rgb(17, 14, 14) 80%
+    );
+
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-height: 100vh;
+}
